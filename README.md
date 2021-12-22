@@ -1,1 +1,1 @@
-https://devlamtran.github.io/blog/
+You can read my blog at:https://devlamtran.github.io
