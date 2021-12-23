@@ -10,6 +10,6 @@ Silicon Graphics, Inc. (SGI) bắt đầu phát triển OpenGL vào năm 1991 v�
 Trước khi nói về kiến trúc của openGL, ta hãy nói về kiến trúc của máy tính để sử lý đồ hoạ trước. Hình sau cho ta thấy hình ảnh trên màn hình được máy tính sử lý như thế nào :
 {% highlight html %} 
 {% raw %} 
-![Battery Widget]({{ '/_posts/cpu_gpu_2x.png' | relative_url }}){: .center-image }(°0°)
+![img]({{ '/_posts/cpu_gpu_2x.png' | relative_url }}){: .center-image }*(°0°)*
 {% endraw %} 
 {% endhighlight html %}
