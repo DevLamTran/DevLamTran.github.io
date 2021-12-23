@@ -11,4 +11,3 @@ Trước khi nói về kiến trúc của openGL, ta hãy nói về kiến trúc
 ![computer architecture]({{site.baseurl}}/_posts/cpu_gpu_2x.png)
 
 
-
