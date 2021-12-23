@@ -14,7 +14,6 @@ To enable it add a `toc` variable to the front matter of your post:
 {% highlight md %}
 {% raw %}
 layout: post
-comments: true
 title: Table of content
 date:   2018-08-03 11:07
 description: For some big articles you can use table on content
