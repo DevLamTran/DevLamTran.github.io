@@ -1,6 +1,15 @@
 ---
 published: true
 ---
+{% highlight md %} 
+{% raw %} 
+layout: post 
+title: Giới thiệu API OpenGL 
+date: 2021-12-23 05:43 
+description: API lập trình đồ hoạ cơ bản
+toc: true <=========== this one 
+{% endraw %} 
+{% endhighlight %}
 ## Giới thiệu API OpenGL
 OpenGL (Open Graphics Library) là một giao diện lập trình ứng dụng (API) đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng.
 
