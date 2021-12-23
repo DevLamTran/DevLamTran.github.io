@@ -19,7 +19,7 @@ Như hình trên máy tính gồm 2 thành phần core là CPU và GPU khi ứng
 
  Hình sau cho ta thấy kiến trúc của một API OpenGL:
 
-![img]({{ '/assets/images/Opengl-Architecture.jpg' | relative_url }}){: .center-image }
+![img]({{ '/assets/images/OpenGL-Architecture.jpg' | relative_url }}){: .center-image }
 
 Y
 
