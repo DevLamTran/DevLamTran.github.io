@@ -9,12 +9,13 @@ published: true
 
 
 
-
+---
 layout: post
 title: Giới thiệu về API OpenGL
 date:   2021-12-23 05:23
 description: API dùng để lập trình đồ hoạ cơ bản
 toc: true           <=========== this one
+---
 
 
 
