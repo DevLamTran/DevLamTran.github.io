@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Table of content
-date:   2018-08-03 11:07
+date: '2018-08-03 11:07'
 description: For some big articles you can use table on content
 toc: true
+published: true
 ---
 
 Above you can see how it looks like. 
@@ -13,6 +14,7 @@ To enable it add a `toc` variable to the front matter of your post:
 {% highlight md %}
 {% raw %}
 layout: post
+comments: true
 title: Table of content
 date:   2018-08-03 11:07
 description: For some big articles you can use table on content
@@ -46,4 +48,4 @@ Received overcame oh sensible so at an. Formed do change merely to county it. Am
 Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality. Leaf by left deal mile oh if easy. Added woman first get led joy not early jokes. 
 
 ## And one more
-It allowance prevailed enjoyment in it. Calling observe for who pressed raising his. Can connection instrument astonished unaffected his motionless preference. Announcing say boy precaution unaffected difficulty alteration him. Above be would at so going heard. Engaged at village at am equally proceed. Settle nay length almost ham direct extent. Agreement for listening remainder get attention law acuteness day. Now whatever surprise resolved elegance indulged own way outlived. 
+It allowance prevailed enjoyment in it. Calling observe for who pressed raising his. Can connection instrument astonished unaffected his motionless preference. Announcing say boy precaution unaffected difficulty alteration him. Above be would at so going heard. Engaged at village at am equally proceed. Settle nay length almost ham direct extent. Agreement for listening remainder get attention law acuteness day. Now whatever surprise resolved elegance indulged own way outlived.
