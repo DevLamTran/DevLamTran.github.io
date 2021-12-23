@@ -8,4 +8,6 @@ OpenGL (Open Graphics Library) là một giao diện lập trình ứng dụng (
 Silicon Graphics, Inc. (SGI) bắt đầu phát triển OpenGL vào năm 1991 và phát hành vào ngày 30 tháng 6 năm 1992; các ứng dụng sử dụng nó rộng rãi trong các lĩnh vực thiết kế có sự hỗ trợ của máy tính (CAD), thực tế ảo, trực quan khoa học, trực quan hóa thông tin, mô phỏng chuyến bay và trò chơi điện tử. Kể từ năm 2006, OpenGL được quản lý bởi tập đoàn công nghệ phi lợi nhuận Khronos Group.
 ## Tổng quan về OpenGL Architecture
 Trước khi nói về kiến trúc của openGL, ta hãy nói về kiến trúc của máy tính để sử lý đồ hoạ trước. Hình sau cho ta thấy hình ảnh trên màn hình được máy tính sử lý như thế nào :
-![img]({{ '/assets/images/cpu_gpu_2x.png' | relative_url }}){: .center-image }*(°0°)*
+
+![img]({{ '/assets/images/cpu_gpu_2x.png' | relative_url }}){: .center-image }
+
