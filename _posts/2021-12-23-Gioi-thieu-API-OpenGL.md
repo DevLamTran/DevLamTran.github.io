@@ -3,7 +3,7 @@ published: true
 title: Giới thiệu API OpenGL
 description: OpenGL (Open Graphics Library) là một giao diện lập trình ứng dụng (API) đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng ...
 tags: graphic
-
+toc: true
 ---
 
 ## Giới thiệu API OpenGL
