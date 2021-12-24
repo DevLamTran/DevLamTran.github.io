@@ -1,28 +1,18 @@
 ---
 published: true
 title: Giới thiệu API OpenGL
-<<<<<<< HEAD
 description: API cơ bản dùng để lập trình đồ họa
-=======
-description: >-
-  OpenGL (Open Graphics Library) là một giao diện lập trình ứng dụng (API) đa
-  ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử
-  dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất
-  phần cứng ...
->>>>>>> 9d665a0a5a97022be6b053aad650533dca65bb45
 tags: graphic
 comments: true
 toc: true
 ---
 
-<<<<<<< HEAD
+
 # Giới thiệu API OpenGL
 
 OpenGL (Open Graphics Library) là một API đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng.
-=======
-## Giới thiệu API OpenGL
+
 OpenGL (Open Graphics Library) là một API đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để lập trình tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng.
->>>>>>> 9d665a0a5a97022be6b053aad650533dca65bb45
 
 Silicon Graphics, Inc. (SGI) bắt đầu phát triển OpenGL vào năm 1991 và phát hành vào ngày 30 tháng 6 năm 1992, các ứng dụng sử dụng nó rộng rãi trong các lĩnh vực thiết kế có sự hỗ trợ của máy tính (CAD), thực tế ảo, trực quan khoa học, trực quan hóa thông tin, mô phỏng chuyến bay và trò chơi điện tử. Kể từ năm 2006, OpenGL được quản lý bởi tập đoàn công nghệ phi lợi nhuận Khronos Group.
 
@@ -57,15 +47,15 @@ Trường hợp dữ liệu vào ở dạng pixel không phải vertex, nó sẽ
 
 # Một số thuật ngữ trong OpenGL
 
-Vertex: là một cấu trúc diễn tả cho khái niệm điểm (point) trong không gian 3 chiều.
+- Vertex: là một cấu trúc diễn tả cho khái niệm điểm (point) trong không gian 3 chiều.
 
-Pixel: là một khái niệm diễn tả cho đơn vị điểm xuất hiện trên thiết bị đồ họa (màn hình, giấy in).
+- Pixel: là một khái niệm diễn tả cho đơn vị điểm xuất hiện trên thiết bị đồ họa (màn hình, giấy in).
 
-Line: Xác định bởi 2 vertex
+- Line: Xác định bởi 2 vertex
 
-Triangle: Xác định bởi 3 vertex
+- Triangle: Xác định bởi 3 vertex
 
-Primitive: Là 1 đối tượng không gian 3 chiều được định nghĩa bởi một nhóm các vertex (có thể là điểm, đoạn thẳng, tam giác hoặc đa giác). Trong OpenGL ES, primitive giới hạn ở điểm, đoạn thẳng và tam giác.
+- Primitive: Là 1 đối tượng không gian 3 chiều được định nghĩa bởi một nhóm các vertex (có thể là điểm, đoạn thẳng, tam giác hoặc đa giác). Trong OpenGL ES, primitive giới hạn ở điểm, đoạn thẳng và tam giác.
 
 Vậy một mô hình bất kì mà mình thấy trên máy tính là được tạo bởi các Primitive. Có thể thấy các đối tượng đồ họa trong game được tạo bởi hàng trăm, hàng ngàn các Primitive cấu thành. Hình dưới là đuôi rồng được tạo bởi các đối tượng Primitive để tạo ra đối tượng đồ họa bắt mắt sống động hơn.
 
