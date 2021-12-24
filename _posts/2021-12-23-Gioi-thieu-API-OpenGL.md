@@ -1,17 +1,22 @@
 ---
 published: true
 title: Giới thiệu API OpenGL
-description: OpenGL (Open Graphics Library) là một giao diện lập trình ứng dụng (API) đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng ...
+description: API cơ bản dùng để lập trình đồ họa
 tags: graphic
 comments: true
 toc: true
 ---
 
-## Giới thiệu API OpenGL
-OpenGL (Open Graphics Library) là một giao diện lập trình ứng dụng (API) đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng.
+# Giới thiệu API OpenGL
+
+OpenGL (Open Graphics Library) là một API đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng.
 
 Silicon Graphics, Inc. (SGI) bắt đầu phát triển OpenGL vào năm 1991 và phát hành vào ngày 30 tháng 6 năm 1992, các ứng dụng sử dụng nó rộng rãi trong các lĩnh vực thiết kế có sự hỗ trợ của máy tính (CAD), thực tế ảo, trực quan khoa học, trực quan hóa thông tin, mô phỏng chuyến bay và trò chơi điện tử. Kể từ năm 2006, OpenGL được quản lý bởi tập đoàn công nghệ phi lợi nhuận Khronos Group.
-## Tổng quan về OpenGL Architecture
+
+Sau khi API OpenGL ra đời thì một loạt các API/framework đồ họa ra đời như : JMonkeyEngine, LWJGL, JOGL, DirectX,... đều dựa trên nguyên lí hoạt động của API OpenGL. Sau này các công ty công nghệ đều lấy API OpenGL làm nền tảng để phát triển các framework đồ họa khác.
+
+# Tổng quan về OpenGL Architecture
+
 Trước khi nói về kiến trúc của openGL, ta hãy nói về kiến trúc của máy tính để sử lý đồ hoạ trước. Hình sau cho ta thấy hình ảnh trên màn hình được máy tính sử lý như thế nào :
 
 ![img]({{ '/assets/images/cpu_gpu_2x.png' | relative_url }}){: .center-image }
@@ -37,7 +42,7 @@ Như hình trên ta thấy API OpenGL có các thành phần chính tương tác
 
 Trường hợp dữ liệu vào ở dạng pixel không phải vertex, nó sẽ được đưa thẳng vào giai đoạn xử lý pixel. Sau giai đoạn này, dữ liệu ở dạng pixel sẽ được lưu trữ vào texture memory để đưa vào giai đoạn Per Fragment Operations hoặc được đưa vào Rasterization như dữ liệu dạng vertex.
 
-## Một số thuật ngữ trong OpenGL
+# Một số thuật ngữ trong OpenGL
 
 Vertex: là một cấu trúc diễn tả cho khái niệm điểm (point) trong không gian 3 chiều.
 
