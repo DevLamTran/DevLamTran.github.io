@@ -21,6 +21,16 @@ Như hình trên máy tính gồm 2 thành phần core là CPU và GPU khi ứng
 
 ![img]({{ '/assets/images/OpenGL-Architecture.jpg' | relative_url }}){: .center-image }
 
+Như đã nói GPU là bộ phận trên card đồ họa hoạt động độc lập với CPU, như vậy khi chương trình chạy trên máy tính muốn gọi qua GPU thì phải thông qua CPU, tương tự CPU phải thông qua API OpenGL để gọi GPU xử lí. Quá trình đó cứ lặp đi lặp lại không ngừng đến khi chương trình kết thúc.
+
+Như hình trên ta thấy API OpenGL có các thành phần chính tương tác với nhau:
+
+- Display List: Là nơi lưu lại một số lệnh để xử lý.
+- Polynomial Evaluator: Là nơi tính toán các đường cong và măt phẳng hình học bằng cách đánh giá các đa thức của dữ liệu đưa vào.
+- Per Vertex Operations & Primitive Assembly: Là nơi xử lý các primitive (điểm, đoạn, đa giác) được mô tả bởi các vertex. Các vertex sẽ được xử lý và các primitive được cắt xén vào viewport để chuẩn bị cho khâu kế tiếp.
+- Rasterization: Là nơi sinh ra một loạt các địa chỉ framebuffer và các giá trị liên quan bằng cách sử dụng mô tả 2 chiều của điểm, đoạn, đa giác. Mỗi phần tử (fragment ) được sinh ra sẽ đưa vào giai đoạn kế.
+- Per Fragment Operations: Các tác vụ sau cùng (cập nhật có điều kiện cho Frame Buffer dựa vào dữ liệu vào và dữ liệu được lưu trữ trước đó của giá trị z (đối với z buffering), thực hiện trộn màu cho các pixel và làm một số thao tác khác) sẽ được thực hiện trên dữ liệu trước khi nó được chuyển thành pixel và đưa vào Frame Buffer.
+
 <div id="disqus_thread"></div>
 <script>
     /**
