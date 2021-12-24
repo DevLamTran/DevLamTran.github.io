@@ -1,15 +1,28 @@
 ---
 published: true
 title: Giới thiệu API OpenGL
+<<<<<<< HEAD
 description: API cơ bản dùng để lập trình đồ họa
+=======
+description: >-
+  OpenGL (Open Graphics Library) là một giao diện lập trình ứng dụng (API) đa
+  ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử
+  dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất
+  phần cứng ...
+>>>>>>> 9d665a0a5a97022be6b053aad650533dca65bb45
 tags: graphic
 comments: true
 toc: true
 ---
 
+<<<<<<< HEAD
 # Giới thiệu API OpenGL
 
 OpenGL (Open Graphics Library) là một API đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng.
+=======
+## Giới thiệu API OpenGL
+OpenGL (Open Graphics Library) là một API đa ngôn ngữ, đa nền tảng để kết xuất đồ họa vector 2D và 3D. API thường được sử dụng để lập trình tương tác với đơn vị xử lý đồ họa (GPU), nhằm đạt được tốc độ kết xuất phần cứng.
+>>>>>>> 9d665a0a5a97022be6b053aad650533dca65bb45
 
 Silicon Graphics, Inc. (SGI) bắt đầu phát triển OpenGL vào năm 1991 và phát hành vào ngày 30 tháng 6 năm 1992, các ứng dụng sử dụng nó rộng rãi trong các lĩnh vực thiết kế có sự hỗ trợ của máy tính (CAD), thực tế ảo, trực quan khoa học, trực quan hóa thông tin, mô phỏng chuyến bay và trò chơi điện tử. Kể từ năm 2006, OpenGL được quản lý bởi tập đoàn công nghệ phi lợi nhuận Khronos Group.
 
@@ -64,5 +77,3 @@ Vậy một mô hình bất kì mà mình thấy trên máy tính là được t
 {% if page.comments == true and site.disqus.shortname %}
 {% include disqus.html %}
 {% endif %}
-
-
