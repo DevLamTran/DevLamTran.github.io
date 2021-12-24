@@ -32,7 +32,29 @@ Như hình trên ta thấy API OpenGL có các thành phần chính tương tác
 - Per Fragment Operations: Là nơi thực hiện các trộn màu cho các pixel và làm một số thao tác khác sẽ được thực hiện trên dữ liệu fragment (chứa thông tin tọa độ, màu sắc,... của pixel) được sinh ra sau bước Rasterization trước khi nó được chuyển thành pixel và đưa vào Frame Buffer.
 - Frame Buffer: Nơi lưu trữ lượng dữ liệu khác nhau trên mỗi pixel, nhưng trong một buffer nhất định mỗi pixel được gán cùng một lượng dữ liệu.
 - Pixel Operations: Nơi tính toán dựa vào dữ liệu được lưu trong Frame Buffer và hiển thị pixel lên màn hình.
-- Texture Memory: Là nơi lưu dữ liệu của hình ảnh dưới dạng bitmap.
+- Texture Memory: Là nơi lưu dữ liệu 1 hoặc 2 chiều các giá trị màu dạng bitmap.
+
+Trường hợp dữ liệu vào ở dạng pixel không phải vertex, nó sẽ được đưa thẳng vào giai đoạn xử lý pixel. Sau giai đoạn này, dữ liệu ở dạng pixel sẽ được lưu trữ vào texture memory để đưa vào giai đoạn Per Fragment Operations hoặc được đưa vào Rasterization như dữ liệu dạng vertex.
+
+## Một số thuật ngữ trong OpenGL
+
+Vertex: là một cấu trúc diễn tả cho khái niệm điểm (point) trong không gian 3 chiều.
+
+Pixel: là một khái niệm diễn tả cho đơn vị điểm xuất hiện trên thiết bị đồ họa (màn hình, giấy in).
+
+Line: Xác định bởi 2 vertex
+
+Triangle: Xác định bởi 3 vertex
+
+Primitive: Là 1 đối tượng không gian 3 chiều được định nghĩa bởi một nhóm các vertex (có thể là điểm, đoạn thẳng, tam giác hoặc đa giác). Trong OpenGL ES, primitive giới hạn ở điểm, đoạn thẳng và tam giác.
+
+Vậy một mô hình bất kì mà mình thấy trên máy tính là được tạo bởi các Primitive. Có thể thấy các đối tượng đồ họa trong game được tạo bởi hàng trăm, hàng ngàn các Primitive cấu thành. Hình dưới là đuôi rồng được tạo bởi các đối tượng Primitive để tạo ra đối tượng đồ họa bắt mắt sống động hơn.
+
+![img]({{ '/assets/images/3d-openGL.png' | relative_url }}){: .center-image }
+
+Ở bài viết này mình đã giới thiệu sơ lược về kiến trúc của API OpenGL cũng như cách mà các đối tượng đồ họa được tạo ra như thế nào thông qua API OpenGL. Cảm ơn các bạn đã đọc.
+
+
 
 <div id="disqus_thread"></div>
 <script>
