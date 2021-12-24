@@ -25,11 +25,14 @@ Như đã nói GPU là bộ phận trên card đồ họa hoạt động độc 
 
 Như hình trên ta thấy API OpenGL có các thành phần chính tương tác với nhau:
 
-- Display List: Là nơi lưu lại một số lệnh để xử lý.
+- Display List: Là bộ nhớ cache - nơi lưu lại một số lệnh để xử lý.
 - Polynomial Evaluator: Là nơi tính toán các đường cong và măt phẳng hình học bằng cách đánh giá các đa thức của dữ liệu đưa vào.
-- Per Vertex Operations & Primitive Assembly: Là nơi xử lý các primitive (điểm, đoạn, đa giác) được mô tả bởi các vertex. Các vertex sẽ được xử lý và các primitive được cắt xén vào viewport để chuẩn bị cho khâu kế tiếp.
-- Rasterization: Là nơi sinh ra một loạt các địa chỉ framebuffer và các giá trị liên quan bằng cách sử dụng mô tả 2 chiều của điểm, đoạn, đa giác. Mỗi phần tử (fragment ) được sinh ra sẽ đưa vào giai đoạn kế.
-- Per Fragment Operations: Các tác vụ sau cùng (cập nhật có điều kiện cho Frame Buffer dựa vào dữ liệu vào và dữ liệu được lưu trữ trước đó của giá trị z (đối với z buffering), thực hiện trộn màu cho các pixel và làm một số thao tác khác) sẽ được thực hiện trên dữ liệu trước khi nó được chuyển thành pixel và đưa vào Frame Buffer.
+- Per Vertex Operations & Primitive Assembly: Là nơi xử lý các primitive (điểm, đoạn, đa giác) được mô tả bởi các vertex. Các vertex sẽ được xử lý và các primitive được cắt xén vào viewport để chuẩn bị cho bước kế tiếp.
+- Rasterization: Là nơi sinh ra một loạt các địa chỉ framebuffer và các giá trị liên quan bằng cách sử dụng mô tả 2 chiều của điểm, đoạn, đa giác. Mỗi phần tử (fragment not pixel) được sinh ra sẽ đưa vào giai đoạn kế tiếp.
+- Per Fragment Operations: Là nơi thực hiện các trộn màu cho các pixel và làm một số thao tác khác sẽ được thực hiện trên dữ liệu fragment (chứa thông tin tọa độ, màu sắc,... của pixel) được sinh ra sau bước Rasterization trước khi nó được chuyển thành pixel và đưa vào Frame Buffer.
+- Frame Buffer: Nơi lưu trữ lượng dữ liệu khác nhau trên mỗi pixel, nhưng trong một buffer nhất định mỗi pixel được gán cùng một lượng dữ liệu.
+- Pixel Operations: Nơi tính toán dựa vào dữ liệu được lưu trong Frame Buffer và hiển thị pixel lên màn hình.
+- Texture Memory: Là nơi lưu dữ liệu của hình ảnh dưới dạng bitmap.
 
 <div id="disqus_thread"></div>
 <script>
