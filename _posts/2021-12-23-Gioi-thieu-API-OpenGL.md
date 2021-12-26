@@ -32,8 +32,8 @@ Như đã nói GPU là bộ phận trên card đồ họa hoạt động độc 
 
 Như hình trên là lược đồ do Henry Ford đề xuất cách mà API OpenGL xử lý dữ liệu đầu vào như thế nào:
 
-- Display List: Dùng để chứa tất cả dữ liệu (vertex, pixel) phục vụ cho việc sử lý tính toán của các bước sau này
-- Polynomial Evaluator: Là bước tính toán các đường cong và măt phẳng hình học bằng các đa thức toán học nhờ vào dữ liệu vertex đầu vào.
+- Display List: Dùng để chứa tất cả dữ liệu (vertex, pixel,các lệnh xử lý) phục vụ cho việc sử lý tính toán của các bước sau này, nó cũng được coi là bộ nhớ cache cho GPU.
+- Evaluator: Là bước tính toán các đường cong và măt phẳng hình học bằng các đa thức toán học nhờ vào dữ liệu vertex đầu vào.
 - Per Vertex Operations & Primitive Assembly: Là bước tính toán các primitive (point, line, polygon) dựa vào dữ liệu vertex đầu vào. Các vertex sẽ được xử lý và các primitive được cắt xén vào viewport để chuẩn bị cho bước kế tiếp.
 - Rasterization: Là bước chuyển đổi dữ liệu primitive và pixel thành các loạt các fragment. Mỗi một fragment tương ứng với một pixel trong framebuffer. Sau đó tính toán các fragment liên quan bằng cách sử dụng mô tả 2 chiều của point, line, polygon. Mỗi phần tử (fragment not pixel) được sinh ra sẽ đưa vào giai đoạn kế tiếp.
 - Per Fragment Operations: Là bước thực hiện các trộn màu và làm một số thao tác khác như :Blending, Antialiasing, Fog,... trên dữ liệu fragment (chứa thông tin tọa độ, màu sắc,... của pixel) được sinh ra sau bước Rasterization trước khi nó được chuyển thành pixel và đưa vào Frame Buffer.
@@ -53,7 +53,7 @@ Như hình trên là lược đồ do Henry Ford đề xuất cách mà API Open
 
 - Line: Xác định bởi 2 vertex
 
-- Polygon: Xác định bởi 3 vertex trở lên
+- Polygon: Xác định từ 3 vertex trở lên
 
 - Primitive: Là 1 đối tượng không gian 3 chiều được định nghĩa bởi một nhóm các vertex (có thể là điểm, đoạn thẳng, tam giác hoặc đa giác)
 
