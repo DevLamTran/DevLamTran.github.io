@@ -41,7 +41,7 @@ Như hình trên là lược đồ do Henry Ford đề xuất cách mà API Open
 - Pixel Operations: Là một loạt các bước tính toán (scale, bias, mapping and clamping) dựa vào dữ liệu pixel được lưu trong Frame Buffer và dữ liệu đầu ra sẽ được đóng gói thành một định dạng thích hợp và được lưu trong bộ nhớ máy tính.
 - Texture Memory: Dùng để lưu các giá trị màu và lưu dữ liệu 1 hoặc 2 chiều các giá trị màu dạng bitmap.
 
-**> Lưu ý: Mỗi bước xử lý của API OpenGL đều phải thông qua GPU, yêu cầu GPU xử lý, như vậy có thể kết luận pipeline xử lý đồ hoạ của GPU cũng chính là pipeline của API OpenGL.
+**Lưu ý: Mỗi bước xử lý của API OpenGL đều phải thông qua GPU, yêu cầu GPU xử lý, như vậy có thể kết luận pipeline xử lý đồ hoạ của GPU cũng chính là pipeline của API OpenGL.**
 
 >Trường hợp dữ liệu vào ở dạng pixel không phải vertex, nó sẽ được đưa thẳng vào giai đoạn xử lý pixel. Sau giai đoạn này, dữ liệu ở dạng pixel sẽ được lưu trữ vào texture memory để đưa vào giai đoạn Per Fragment Operations hoặc được đưa vào Rasterization như dữ liệu dạng vertex.
 
