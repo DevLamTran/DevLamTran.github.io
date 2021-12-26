@@ -18,11 +18,11 @@ Sau khi API OpenGL ra đời thì một loạt các API/framework đồ họa ra
 
 # Tổng quan về OpenGL Pipeline
 
-Trước khi nói về pipeline của openGL, ta hãy nói về pipeline của máy tính trong việc sử lý đồ hoạ trước. Hình sau cho ta thấy hình ảnh trên màn hình được máy tính sử lý như thế nào :
+Trước khi nói về pipeline (quy trình) của openGL, ta hãy nói về pipeline của máy tính trong việc sử lý đồ hoạ trước. Hình sau cho ta thấy hình ảnh trên màn hình được máy tính sử lý như thế nào :
 
 ![img]({{ '/assets/images/cpu_gpu_2x.png' | relative_url }}){: .center-image }
 
-Như hình trên máy tính gồm 2 thành phần core là CPU và GPU khi ứng dụng chạy trên máy tính chúng sẽ gọi qua API/Framework openGL để yêu cầu GPU sử lí. Có thể nói sự quan trọng của GPU không khác gì CPU, GPU đảm nhiệm vai trò tính toán, sử lí gấp bội lần so với CPU. Ngày nay khi mua máy tính để làm những công việc về đồ họa, người ta thường yêu cầu mua thêm Card đồ họa rời để làm việc tối ưu hơn là vậy. Vì Card đồ họa rời chứa GPU hoạt động độc lập, chuyên xử lý tất cả dữ liệu về hình ảnh hơn Card đồ họa được tích hợp trên bo mạch chủ. Trong bài viết này mình chỉ đề cập tới API OpenGL thôi. Vì các framework dùng để lập trình đồ họa đều dựa vào API OpenGL. Hiểu dược API openGL hoạt động như thế nào thì sẽ hiểu được các framework đồ họa khác.
+Như hình trên máy tính gồm 2 thành phần core là CPU và GPU khi ứng dụng chạy trên máy tính chúng sẽ gọi qua API/Framework openGL để yêu cầu GPU sử lí. Có thể nói sự quan trọng của GPU không khác gì CPU, GPU đảm nhiệm vai trò tính toán, sử lí gấp bội lần so với CPU. Ngày nay khi mua máy tính để làm những công việc về đồ họa, người ta thường yêu cầu mua thêm Card đồ họa rời để làm việc tối ưu hơn là vậy. Vì Card đồ họa rời chứa GPU hoạt động độc lập, chuyên xử lý tất cả dữ liệu về hình ảnh hơn Card đồ họa được tích hợp trên bo mạch chủ. Trong bài viết này mình chỉ đề cập tới API OpenGL thôi. Vì các framework dùng để lập trình đồ họa đều phát triển dựa trên API OpenGL. Hiểu dược API openGL hoạt động như thế nào thì sẽ hiểu được các framework đồ họa khác hoạt động như thế nào.
 
  Hình sau cho ta thấy pipeline của một API OpenGL:
 
@@ -40,6 +40,8 @@ Như hình trên là lược đồ do Henry Ford đề xuất cách mà API Open
 - Frame Buffer: Nơi lưu trữ lượng dữ liệu khác nhau trên mỗi pixel, nhưng trong một buffer nhất định mỗi pixel được gán cùng một lượng dữ liệu.
 - Pixel Operations: Là một loạt các bước tính toán (scale, bias, mapping and clamping) dựa vào dữ liệu pixel được lưu trong Frame Buffer và dữ liệu đầu ra sẽ được đóng gói thành một định dạng thích hợp và được lưu trong bộ nhớ máy tính.
 - Texture Memory: Dùng để lưu các giá trị màu và lưu dữ liệu 1 hoặc 2 chiều các giá trị màu dạng bitmap.
+
+**> Lưu ý: Mỗi bước xử lý của API OpenGL đều phải thông qua GPU, yêu cầu GPU xử lý, như vậy có thể kết luận pipeline xử lý đồ hoạ của GPU cũng chính là pipeline của API OpenGL.
 
 >Trường hợp dữ liệu vào ở dạng pixel không phải vertex, nó sẽ được đưa thẳng vào giai đoạn xử lý pixel. Sau giai đoạn này, dữ liệu ở dạng pixel sẽ được lưu trữ vào texture memory để đưa vào giai đoạn Per Fragment Operations hoặc được đưa vào Rasterization như dữ liệu dạng vertex.
 
