@@ -1,6 +1,6 @@
 # Jekyll configuration
 
-name: Riemann Tran
+name: Lam CS
 description: Software Developer
 
 # Url is currently only used only for the RSS feed in feed.xml
@@ -10,7 +10,7 @@ url: http://devlamtran.github.io
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: ''
 
-author: Pavel Makhov
+author: Tran Gia Lam
 copyright: 2022
 
 share:
