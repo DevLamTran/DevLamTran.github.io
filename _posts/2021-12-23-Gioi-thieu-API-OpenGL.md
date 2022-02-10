@@ -71,6 +71,4 @@ Câu trả lời là chúng được tạo bởi nhiều đối tượng primiti
 Ở bài viết này mình đã giới thiệu sơ lược về kiến trúc của API OpenGL cũng như cách mà các đối tượng đồ họa được tạo ra như thế nào thông qua API OpenGL. Cảm ơn các bạn đã đọc.
 
 
-{% if page.comments == true and site.disqus.shortname %}
-{% include disqus.html %}
-{% endif %}
+
