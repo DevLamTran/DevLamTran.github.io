@@ -3,7 +3,6 @@ published: true
 title: Giới thiệu API OpenGL
 description: API cơ bản dùng để lập trình đồ họa
 tags: graphic
-comments: true
 toc: true
 ---
 
