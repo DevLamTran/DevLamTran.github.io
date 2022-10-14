@@ -13,8 +13,6 @@ OpenGL (Open Graphics Library) là một API đa ngôn ngữ, đa nền tảng �
 
 Silicon Graphics, Inc. (SGI) bắt đầu phát triển OpenGL vào năm 1991 và phát hành vào ngày 30 tháng 6 năm 1992, các ứng dụng sử dụng nó rộng rãi trong các lĩnh vực thiết kế có sự hỗ trợ của máy tính (CAD), thực tế ảo, trực quan khoa học, trực quan hóa thông tin, mô phỏng chuyến bay và trò chơi điện tử, OpenGL được quản lý bởi tập đoàn công nghệ phi lợi nhuận Khronos Group.
 
-Sau khi API OpenGL ra đời thì một loạt các API/framework đồ họa ra đời như : JMonkeyEngine, LWJGL, JOGL, DirectX,... đều dựa trên nguyên lí hoạt động của API OpenGL. Sau này các công ty công nghệ đều lấy API OpenGL làm nền tảng để phát triển các framework đồ họa khác.
-
 # Tổng quan về OpenGL Pipeline
 
 Trước khi nói về pipeline (quy trình) của openGL, ta hãy nói về pipeline của máy tính trong việc sử lý đồ hoạ trước. Hình sau cho ta thấy hình ảnh trên màn hình được máy tính sử lý như thế nào :
