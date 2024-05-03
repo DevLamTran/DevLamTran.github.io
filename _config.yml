@@ -53,3 +53,4 @@ kramdown:
   hard_wrap: true
 
 exclude: ['README.md', 'LICENSE']
+paginate: 1
